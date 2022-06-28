@@ -1,8 +1,6 @@
 package com.sot.thanasis.swordrest.model;
 
-
 import javax.persistence.*;
-
 @Entity
 @Table(name="employees")
 public class Employee {

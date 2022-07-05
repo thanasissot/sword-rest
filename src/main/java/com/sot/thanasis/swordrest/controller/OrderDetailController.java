@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/orderdetail")
+@RequestMapping("/orderdetails")
 public class OrderDetailController {
     @Autowired
     OrderDetailService orderDetailService;
 
-    @RequestMapping(value="/orderdetails", method = RequestMethod.GET)
+    @RequestMapping(value="/allorderdetails", method = RequestMethod.GET)
     public List<OrderDetail> readOrderDetails() {
         return orderDetailService.getOrderDetails();
     }
